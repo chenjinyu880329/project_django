@@ -22,4 +22,5 @@ from . import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     url(r'^$', views.indexs),
+    url(r'^web/', include('booktest.urls',namespace='booktest')),
 ]
